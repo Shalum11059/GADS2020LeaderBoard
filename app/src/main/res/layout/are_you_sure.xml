@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_edges"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:clickable="true"
+            app:srcCompat="@mipmap/ic_close"/>
+
+        <TextView
+            android:id="@+id/confirmation_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Are you sure?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <Button
+            android:id="@+id/button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="149dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/yes_button"
+            android:text="Yes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorGads"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
